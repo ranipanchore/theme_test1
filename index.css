@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#131516;
+    color: #fff;
+}
+
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* top-section start */
+#top-section > h1{
+    text-align: center;
+}
+#top-section > div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}
+.store-options > div > img {
+    width: 100%;
+}
+.store-options > div > p {
+    font-size: large;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+/* small screen */
+@media all and (min-width:100px) and (max-width:400px) {
+    #top-section > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* medium screen */
+@media all and (min-width:401px) and (max-width:800px) {
+    #top-section > div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+/* top-section end */
+
+
+/* mid-section start */
+
+#mid-section > div{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 10px;
+}
+#mid-section > div > div > img{
+    width: 100%;
+}
+
+
+/* small screen */
+@media all and (min-width:100px) and (max-width:400px){
+    #mid-section > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* midium screen */
+@media all and (min-width:401px) and (max-width:800px)
+{
+    #mid-section > div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+/* mid-section end */
+
+/* bottom  section start */
+#bottom-section >h1>{
+    text-align: center;
+}
+    #bottom-section > div {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+
+    #bottom-section > div > div > img {
+        width: 100%;
+    }
+
+    #bottom-section > div > div >h2{
+        text-align: center;
+        background-color: #9a2900;
+        margin: -4px 0px;
+        padding: 25px 0px;
+    }
+
+    /* media query for small screen */
+    @media all and (min-width:100px) and (max-width:400px){
+        #bottom-section > div {
+            grid-template-rows: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+        }
+    }
+
+
+     /* media query for medium screen */
+     @media all and (min-width:401px) and (max-width:800px){
+        #bottom-section > div {
+            grid-template-rows: repeat(1,1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+    }
+/* bottom section end */
